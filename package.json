@@ -1,4 +1,5 @@
 {
+  "homepage": "http://raihanhn.github.io/Tshop-cart",
   "name": "type",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +8,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
